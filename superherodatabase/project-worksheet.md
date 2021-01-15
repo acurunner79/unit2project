@@ -23,10 +23,10 @@ Use this section to include info about the API you have chosen and a code snippe
 
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app.
 
-- [Mobile 1](http://res.cloudinary.com/acurunner79/image/upload/v1610734760/IMG_2723_gek0qk.heic)
-- [Mobile 2](http://res.cloudinary.com/acurunner79/image/upload/v1610734731/IMG_2724_ztg3np.heic)
-- [Mobile 3](http://res.cloudinary.com/acurunner79/image/upload/v1610734718/IMG_2725_gg1ahi.heic)
-- [add link to your react architecture]()
+- [Wireframe 1](http://res.cloudinary.com/acurunner79/image/upload/v1610734760/IMG_2723_gek0qk.heic)
+- [Wireframe 2](http://res.cloudinary.com/acurunner79/image/upload/v1610734731/IMG_2724_ztg3np.heic)
+- [Wireframe 3](http://res.cloudinary.com/acurunner79/image/upload/v1610734718/IMG_2725_gg1ahi.heic)
+- [Architecture Link](http://res.cloudinary.com/acurunner79/image/upload/v1610739374/IMG_2726_joyslf.heic)
 
 
 ### MVP/PostMVP - 5min
@@ -49,18 +49,22 @@ Based on the initial logic defined in the previous sections try and breakdown th
 
 | Component | Description | 
 | --- | :---: |  
-| App | This will make the initial data pull and include React Router| 
-| Header | This will render the header include the nav | 
-| Footer | This will render the header include the nav | 
+| App | This will include React Router| 
+| HeroSearch.js | This is where you can search by name | 
+| SuperheroDatabase.js | This is where my API fetch will happen | 
+| HeroDisplay.js | This is where my searched hero will display | 
+| Nav.js | My navbar will be here | 
+| About.js | This will display text giving info about app | 
 
 
 Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Also, put a gif at the top of your Readme before you pitch, and you'll get a panda prize.
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| Adding Search Form | H | 4hrs|  |  |
+| Working with API | H | 4hrs |  |  |
+| CSS Styling: Post MVP | H | 4hrs |  |  |
+| Total | H | 12hrs| hrs | hrs |
 
 ## Additional Libraries
  Use this section to list all supporting libraries and thier role in the project such as Axios, ReactStrap, D3, etc. 

@@ -15,7 +15,18 @@ Use this section to include info about the API you have chosen and a code snippe
 
 
 ```
-{data: {} }
+{response: "success", results-for: "batman", results: Array(3)}
+response: "success"
+results: Array(3)
+0:
+appearance: {gender: "Male", race: "Human", height: Array(2), weight: Array(2), eye-color: "Blue", …}
+biography: {full-name: "Terry McGinnis", alter-egos: "No alter egos found.", aliases: Array(5), place-of-birth: "Gotham City, 25th Century", first-appearance: "Batman Beyond #1", …}
+connections: {group-affiliation: "Batman Family, Justice League Unlimited", relatives: "Bruce Wayne (biological father), Warren McGinnis (…, Mary McGinnis (mother), Matt McGinnis (brother)"}
+id: "69"
+image: {url: "https://www.superherodb.com/pictures2/portraits/10/100/10441.jpg"}
+name: "Batman"
+powerstats: {intelligence: "81", strength: "40", speed: "29", durability: "55", power: "63", …}
+work: {occupation: "-", base: "21st Century Gotham City"}
 ```
 
 

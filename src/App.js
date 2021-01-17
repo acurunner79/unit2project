@@ -20,7 +20,7 @@ function App() {
       <Route path="/hero-search">
         <HeroSearch />
       </Route>
-      <Route path="/">
+      <Route exact path="/">
         <SuperheroData />
       </Route>
     </div>

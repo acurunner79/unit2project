@@ -2,7 +2,10 @@ import React from 'react'
 
 
 const HeroSearch = (props) => {
-    const [heroData, setHeroData] = React.useState(null)
+    console.log('this is hero', props)
+    const [heroData, setHeroData] = React.useState({searchname: "",})
+
+    
 
        const handleChange = (event) => {
            console.log('event', event)
@@ -10,7 +13,8 @@ const HeroSearch = (props) => {
        }
     const handleSubmit = (event) => {
         event.preventDefault()
-       props.searchName(heroData.searchName)
+       props.herosearch(heroData.searchname)
+       props.history.push("/hero-display")
     }   
 
     return (
@@ -20,7 +24,7 @@ const HeroSearch = (props) => {
                 <input
                    type="text"
                    name="searchname"
-                //    value={heroData.searchName}
+                   value={heroData.searchname}
                    onChange={handleChange}
                    placeholder="Enter name"></input>
                 <input

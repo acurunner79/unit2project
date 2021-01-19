@@ -1,4 +1,5 @@
 // import logo from './logo.svg';
+import React from 'react'
 import './App.css';
 import About from './components/About'
 import HeroDisplay from './SuperheroData/HeroDisplay'
@@ -8,6 +9,11 @@ import { Route } from "react-router-dom"
 import Nav from './components/Nav'
 
 function App() {
+  const [hero, setHero] = React.useState(null)
+  const herosearch = (myHero) => {
+     setHero(myHero)
+  }
+
   return (
     <div className="App">
       <Nav />
@@ -15,11 +21,9 @@ function App() {
         <About />
       </Route>
       <Route path="/hero-display">
-        <HeroDisplay />
+        <HeroDisplay hero={hero}/>
       </Route>
-      <Route path="/hero-search">
-        <HeroSearch />
-      </Route>
+      <Route path="/hero-search" render={(routerProps) => <HeroSearch {...routerProps} herosearch={herosearch}/>} />
       <Route exact path="/">
         <SuperheroData />
       </Route>

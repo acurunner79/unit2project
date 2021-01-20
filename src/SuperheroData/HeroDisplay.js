@@ -29,7 +29,7 @@ const HeroDisplay = (props) => {
             
               return (
                   <div className="hero-card">
-                  <h1>This is the HeroDisplay section</h1>
+                  <h1>{item.name}</h1>
                   <img src={item.image.url}></img>
                   <h2>Name: {item.name}</h2>
                   <h2>Race: {item.appearance.race}</h2>

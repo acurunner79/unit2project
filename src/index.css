@@ -5,6 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* background-image: url('https://res.cloudinary.com/acurunner79/image/upload/v1611169026/4UJqpkA_l9sxlj.jpg'); */
+  background-size: auto;
 }
 
 code {
@@ -15,10 +17,10 @@ code {
 .nav {
   display: flex;
   justify-content: space-between;
-  background-color: black;
+  background-color: rgb(238, 20, 20);
   color: white;
   padding: 15px;
-  font-size: 2em;
+  font-size: 1em;
 }
 
 .nav a {

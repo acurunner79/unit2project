@@ -7,6 +7,7 @@ import HeroSearch from './SuperheroData/HeroSearch'
 import SuperheroData from './SuperheroData/index'
 import { Route } from "react-router-dom"
 import Nav from './components/Nav'
+import Footer from './components/Footer'
 
 function App() {
   const [hero, setHero] = React.useState(null)
@@ -15,6 +16,7 @@ function App() {
   }
 
   return (
+    
     <div className="App">
       <Nav />
       <Route path="/about">
@@ -27,7 +29,9 @@ function App() {
       <Route exact path="/">
         <SuperheroData />
       </Route>
+      <Footer />
     </div>
+  
   );
 }
 

@@ -15,7 +15,7 @@ const HeroDisplay = (props) => {
         const data = await response.json()
         setHero(data)
         // console.log('this has items from name section', data)
-        console.log('this is details', data.results[0])
+        // console.log('this is details', data.results[0])
     }
     React.useEffect(() => {
         getHero()
@@ -41,7 +41,7 @@ const HeroDisplay = (props) => {
 }
 
       const loading = () => {
-         return <h2>No Superhero to display</h2>
+         return <h2>Loading...</h2>
 }
          return hero ? loaded() : loading()
 }

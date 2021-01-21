@@ -5,8 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-image: url('https://res.cloudinary.com/acurunner79/image/upload/v1611169026/4UJqpkA_l9sxlj.jpg'); */
-  background-size: auto;
+  
+  
 }
 
 code {
@@ -26,4 +26,14 @@ code {
 .nav a {
   color: white;
   text-decoration: none;
+}
+
+@media only screen and (min-width: 426px) {
+
+  body {
+    background-image: url('https://res.cloudinary.com/acurunner79/image/upload/c_scale,h_2100,w_1024/v1611174151/QgTND_iwk0cp.jpg');
+    background-position: center;
+    background-repeat: repeat-y;
+    max-width: 1024px;
+  }
 }

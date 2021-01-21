@@ -5,7 +5,7 @@ import React from 'react'
 
 
 
-const SuperheroData = (props) => {
+const SuperheroData = () => {
 
     // const searchname = props?.heroData?.searchname
 

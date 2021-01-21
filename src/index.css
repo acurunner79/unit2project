@@ -20,6 +20,7 @@ code {
 
 .nav {
   display: flex;
+  position: center;
   justify-content: space-between;
   background-color: rgb(238, 20, 20);
   color: white;
@@ -35,16 +36,9 @@ code {
 .submit, .input {
   font-family: Goldman;
   color: black;
+  position: center;
 }
 
-.footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 20;
-  height: 80;
-}
 
 @media only screen and (min-width: 426px) {
 
@@ -59,7 +53,7 @@ code {
     color: white;
     text-shadow: 2px 2px 5px white;
     font-family: Goldman;
-
+    position: center;
   }
 
   .image {

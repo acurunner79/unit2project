@@ -5,8 +5,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
   
-  
+}
+
+.title {
+  text-decoration-line: underline;
 }
 
 code {
@@ -28,6 +32,20 @@ code {
   text-decoration: none;
 }
 
+.submit, .input {
+  font-family: Goldman;
+  color: black;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20;
+  height: 80;
+}
+
 @media only screen and (min-width: 426px) {
 
   body {
@@ -36,4 +54,16 @@ code {
     background-repeat: repeat-y;
     max-width: 1024px;
   }
+
+  .hero-card, .about, .search, .home {
+    color: white;
+    text-shadow: 2px 2px 5px white;
+    font-family: Goldman;
+
+  }
+
+  .image {
+    box-image: 2px 2px 15px white;
+  }
+
 }

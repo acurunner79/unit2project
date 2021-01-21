@@ -15,7 +15,7 @@ const HeroDisplay = (props) => {
         const data = await response.json()
         setHero(data)
         // console.log('this has items from name section', data)
-        // console.log('this is details', data.results[0])
+        console.log('this is details', data.results[0])
     }
     React.useEffect(() => {
         getHero()
@@ -29,11 +29,13 @@ const HeroDisplay = (props) => {
             
               return (
                   <div className="hero-card">
-                  <h1>{item.name}</h1>
-                  <img src={item.image.url}></img>
-                  <h2>Name: {item.name}</h2>
-                  <h2>Race: {item.appearance.race}</h2>
-                  <h2>Height: {item.appearance.height[0]}</h2>
+                  <h1 className="title">{item.name}</h1>
+                  <img className="image" src={item.image.url} alt="image"></img>
+                  <h3>Name: {item.name}</h3>
+                  <h3>Race: {item.appearance.race}</h3>
+                  <h3>Height: {item.appearance.height[0]}</h3>
+                  <h3>Weight: {item.appearance.weight[0]}</h3>
+                  {/* <h3>Height: {item.biography}</h3> */}
                 </div>
 
               )

@@ -26,10 +26,12 @@ const SuperheroData = (props) => {
 
       
     return (
-        <>
-        <h1>This is the SuperheroData section</h1>
-
-        </>
+        <div className="home">
+        <h1>This is the Superhero Database</h1>
+        <section className="home-text">
+            <h3> This database has general information regarding </h3>
+        </section>
+        </div>
     )
 }
 

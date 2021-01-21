@@ -18,16 +18,16 @@ const HeroSearch = (props) => {
     }   
 
     return (
-        <div>
+        <div className="search">
         <h1>This is the HeroSearch section</h1>
             <form onSubmit={handleSubmit}>
-                <input
+                <input className="input"
                    type="text"
                    name="searchname"
                    value={heroData.searchname}
                    onChange={handleChange}
                    placeholder="Enter name"></input>
-                <input
+                <input className="submit"
                 type="submit"
                 value="submit"></input>
             </form>

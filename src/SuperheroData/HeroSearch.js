@@ -31,6 +31,8 @@ const HeroSearch = (props) => {
                 type="submit"
                 value="submit"></input>
             </form>
+                <h2>Type a name of any superhero or villian to generate a details page with your results.</h2>
+                <h2>When you're done typing the name you would like to search just hit "submit".</h2>
         </div>
     )
 }

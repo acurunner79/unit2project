@@ -38,6 +38,12 @@ code {
   margin-right: 50px;
 }
 
+.go-back {
+  color: white;
+}
+.vid {
+  display: none;
+}
 img.image {
   box-shadow:  white 2px 2px 15px;
   max-width: 300px;
@@ -70,6 +76,17 @@ img.image {
     
   }
 
+  h1, h2, h3 {
+    padding: 0px 120px 0px 120px;
+  }
+
+  div.vid {
+    display: inline-flex;
+    
+    max-width: 300px;
+    max-height: 460px;
+  }
+
   .hero-card {
     /* border: 2em solid white; */
   }
@@ -78,6 +95,14 @@ img.image {
   .nav {
     background-position: center !important;
     font-size: 2em;
+  }
+
+  @media only screen and (min-width: 769px) {
+    
+    h1, h2, h3 {
+      padding: 0px 240px 0px 240px;
+    }
+
   }
 
 }

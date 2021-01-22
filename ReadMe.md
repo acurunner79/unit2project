@@ -3,7 +3,7 @@
 ## Project Links
 
 - [Github Repo](https://github.com/acurunner79/unit2project.git)
-- [add your deployment link]()
+- [add your deployment link](https://jorges-superhero-database.netlify.app)
 
 ## Project Description
 
@@ -72,10 +72,10 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Search Form | H | 4hrs|  |  |
-| Working with API | H | 4hrs |  |  |
-| CSS Styling: Post MVP | H | 4hrs |  |  |
-| Total | H | 12hrs| hrs | hrs |
+| Adding Search Form | H | 4hrs|  | 4hrs  |
+| Working with API | H | 4hrs |  | 8hrs |
+| CSS Styling: Post MVP | H | 4hrs |  | 8hrs |
+| Total | H | 12hrs| hrs | 20hrs |
 
 ## Additional Libraries
  Use this section to list all supporting libraries and thier role in the project such as Axios, ReactStrap, D3, etc. 

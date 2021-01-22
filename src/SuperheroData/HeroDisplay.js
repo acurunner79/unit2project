@@ -1,8 +1,9 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 
 
 const HeroDisplay = (props) => {
-    // console.log('display?', props)
+    
     const searchname = props?.hero
 
     const apiURL = `https://cors-anywhere.herokuapp.com/https://superheroapi.com/api/10218084998348396/search/${searchname}/`
@@ -29,8 +30,11 @@ const HeroDisplay = (props) => {
           
       return (
         <div className="hero-card">
+          <Link to="/hero-search">
+            <h3 className="go-back">Return To Search</h3>
+          </Link>
             <h1 className="title">{item.name}</h1>
-            <img className="image" src={item.image.url} alt="{item.name}"></img>
+            <img className="image" src={item.image.url} alt="{STATUS: UNKNOWN}"></img>
             <h3>Name: {item.name}</h3>
             <h3>Race: {item.appearance.race}</h3>
             <h3>Height: {item.appearance.height[0]}</h3>
@@ -44,7 +48,15 @@ const HeroDisplay = (props) => {
 }
 
 const loading = () => {
-  return <h2>Loading...</h2>
+  return (
+   <>
+  <Link to="/hero-search">
+    <h3 className="go-back">Return To Search</h3>
+  </Link>
+    <h2>Loading...</h2>
+    <h2>Character not found</h2>
+  </>
+  )
 }
 
 return hero ? loaded() : loading()

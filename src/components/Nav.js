@@ -12,7 +12,7 @@ const Nav = () => {
         <div>Hero Search</div>
       </Link>
         <Link to="about">
-            <div>About Heroes</div>
+            <div>About</div>
         </Link>
     </div>
   );

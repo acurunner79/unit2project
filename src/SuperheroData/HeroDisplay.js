@@ -15,7 +15,7 @@ const HeroDisplay = (props) => {
         const data = await response.json()
         setHero(data)
         // console.log('this has items from name section', data)
-        console.log('this is details', data.results[0])
+        console.log('this is details', data)
     }
     React.useEffect(() => {
         getHero()
@@ -23,30 +23,33 @@ const HeroDisplay = (props) => {
 
 
       
-      const loaded = () => {
+    const loaded = () => {
+        
+      return  hero.results.map(item => {
           
-       return  hero.results.map(item => {
-            
-              return (
-                  <div className="hero-card">
-                  <h1 className="title">{item.name}</h1>
-                  <img className="image" src={item.image.url} alt="image"></img>
-                  <h3>Name: {item.name}</h3>
-                  <h3>Race: {item.appearance.race}</h3>
-                  <h3>Height: {item.appearance.height[0]}</h3>
-                  <h3>Weight: {item.appearance.weight[0]}</h3>
-                  {/* <h3>Height: {item.biography}</h3> */}
-                </div>
+      return (
+        <div className="hero-card">
+            <h1 className="title">{item.name}</h1>
+            <img className="image" src={item.image.url} alt="{item.name}"></img>
+            <h3>Name: {item.name}</h3>
+            <h3>Race: {item.appearance.race}</h3>
+            <h3>Height: {item.appearance.height[0]}</h3>
+            <h3>Weight: {item.appearance.weight[0]}</h3>
+            <h3>Uses powers for: "{item.biography.alignment}"</h3>
+        </div>
 
-              )
-            })
+)
+})
+
 }
 
-      const loading = () => {
-         return <h2>Loading...</h2>
+const loading = () => {
+  return <h2>Loading...</h2>
 }
-         return hero ? loaded() : loading()
+
+return hero ? loaded() : loading()
 }
+  
 
 
 export default HeroDisplay

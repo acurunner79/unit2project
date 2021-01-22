@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,7 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
+  
   
 }
 
@@ -19,18 +20,28 @@ code {
 }
 
 .nav {
+  font-family: Goldman;
   display: flex;
-  position: center;
   justify-content: space-between;
   background-color: rgb(238, 20, 20);
   color: white;
   padding: 15px;
   font-size: 1em;
+  width: 100vw;
+  align-items: center;
+
 }
 
 .nav a {
   color: white;
   text-decoration: none;
+  margin-right: 50px;
+}
+
+img.image {
+  box-shadow:  white 2px 2px 15px;
+  max-width: 300px;
+  max-height: 460px;
 }
 
 .submit, .input {
@@ -46,18 +57,27 @@ code {
     background-image: url('https://res.cloudinary.com/acurunner79/image/upload/c_scale,h_2100,w_1024/v1611174151/QgTND_iwk0cp.jpg');
     background-position: center;
     background-repeat: repeat-y;
-    max-width: 1024px;
+    text-align: center;
+    width: 100vw;
   }
+
 
   .hero-card, .about, .search, .home {
     color: white;
     text-shadow: 2px 2px 5px white;
     font-family: Goldman;
-    position: center;
+    text-align: center;
+    
   }
 
-  .image {
-    box-image: 2px 2px 15px white;
+  .hero-card {
+    /* border: 2em solid white; */
+  }
+
+
+  .nav {
+    background-position: center !important;
+    font-size: 2em;
   }
 
 }

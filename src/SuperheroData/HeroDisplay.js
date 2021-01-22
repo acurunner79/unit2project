@@ -53,8 +53,8 @@ const loading = () => {
   <Link to="/hero-search">
     <h3 className="go-back">Return To Search</h3>
   </Link>
-    <h2>Loading...</h2>
-    <h2>Character not found</h2>
+    <h2 className="go-back">Loading...</h2>
+    {/* <h2>Character not found</h2> */}
   </>
   )
 }

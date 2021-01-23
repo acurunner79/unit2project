@@ -44,7 +44,7 @@ code {
 }
 
 .go-back {
-  color: white;
+  color:black;
 }
 .vid {
   display: none;
@@ -71,7 +71,9 @@ img.image {
     text-align: center;
     width: 100vw;
   }
-
+  .go-back {
+    color: white;
+  }
 
   .hero-card, .about, .search, .home {
     color: white;

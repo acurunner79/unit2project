@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from "react-router-dom";
 
 
@@ -9,7 +9,6 @@ const HeroDisplay = (props) => {
     const apiURL = `https://cors-anywhere.herokuapp.com/https://superheroapi.com/api/10218084998348396/search/${searchname}/`
 
     const [hero, setHero] = React.useState(null)
-    
 
     const getHero = async () => {
         const response = await fetch(apiURL,{headers:{'Origin': 'https://superheroapi.com'}})
@@ -26,8 +25,9 @@ const HeroDisplay = (props) => {
       
     const loaded = () => {
         
-      return  hero.results.map(item => {
+      return  hero?.results?.map(item => {
           
+        console.log('work',item.work)
       return (
         <div className="hero-card">
           <Link to="/hero-search">
@@ -40,6 +40,7 @@ const HeroDisplay = (props) => {
             <h3>Height: {item.appearance.height[0]}</h3>
             <h3>Weight: {item.appearance.weight[0]}</h3>
             <h3>Uses powers for: "{item.biography.alignment}"</h3>
+            <h3>Work: "{item.work.occupation}"</h3>
         </div>
 
 )
